@@ -9,8 +9,7 @@
 	"lint-staged": {
 		"*.{ts,tsx}": [
 			"eslint --fix",
-			"prettier --write",
-			"git add"
+			"prettier --write"
 		]
 	},
 	"config": {
@@ -31,10 +30,15 @@
 		"clean:modules": "bash ./scripts/clean-node-modules.sh"
 	},
 	"dependencies": {
+		"@emotion/babel-plugin": "^11.10.2",
+		"@emotion/react": "^11.10.4",
+		"@emotion/styled": "^11.10.4",
 		"axios": "^0.27.2",
+		"emotion-reset": "^3.0.1",
 		"next": "^12.2.5",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-query": "^3.39.2"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.1.2",

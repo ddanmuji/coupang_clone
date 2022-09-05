@@ -1,10 +1,15 @@
+import Head from 'next/head';
 import Test from '@components/Test';
 
 const HomePage = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>쿠팡!</title>
+      </Head>
+      <div>home page</div>
       <Test />
-    </div>
+    </>
   );
 };
 
